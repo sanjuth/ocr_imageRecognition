@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/style.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <div id="login">
+        <div id="home">
+            <ul>
+                <li class="m">OCR API</li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom">
+        <div>
+            <img src="/static/styles/sbi_image.png" alt="" id="im">
+        </div>
+        <!-- <div> -->
+            <h1 id="fon">SBI</h1>
+        <!-- </div> -->
+        <div id="input">
+            <p id="upload">upload image</p>
+            <div id="fi">
+            <form action = "http://localhost:5000/upload" method="POST" enctype="multipart/form-data">
+                <input type="file" name="img" >
+                <input id="infi" type="submit">
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
